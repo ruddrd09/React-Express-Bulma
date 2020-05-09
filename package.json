@@ -1,0 +1,22 @@
+{
+  "name": "react-express-bulma",
+  "version": "1.0.0",
+  "description": "React, Express and Bulma",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd react-client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "react-client": "npm start --prefix react-client",
+    "dev": "concurrently \"npm run server\" \"npm run react-client\""
+  },
+  "author": "Rudresh Dharmadhikari",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
