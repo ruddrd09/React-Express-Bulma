@@ -40,9 +40,7 @@ app.post('/editSurvey', (req, res, next) => {
     console.log(req.body);
     employees[req.body.id].surveyAvailable = req.body.available;
     employees[req.body.id].surveyAssigned = req.body.assigned;
-    res.status(201).json({
-        "edit": "successful"
-    })
+    res.status(201).json(employees)
 })
 
 const port = 9000;
