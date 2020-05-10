@@ -7,7 +7,7 @@ The app is built using Express.js for building the middleware, data is stored lo
 Steps to run ->
 After installing the repository on your system, run ->
 "npm install" for the Express dependencies,
-"npm install client-install" for React dependencies
+"npm install client-install" for React dependencies in the root folder,
 Cdn is used for using Bulma in the project
 
 Run the project using "npm run dev".
