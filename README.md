@@ -10,4 +10,6 @@ After installing the repository on your system, run ->
 "npm install client-install" for React dependencies in the root folder,
 Cdn is used for using Bulma in the project
 
-Run the project using "npm run dev".
+Run the project using "npm run dev" which runs both the express and the react server at once using "concurrently".
+
+Express is running on http://localhost:9000/ and React on http://localhost:3000/
