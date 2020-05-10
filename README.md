@@ -1,5 +1,5 @@
 # React-Express-Bulma
-The application is a Survey Assignment System, which assignes Surveys to various employees.
+The application is a Survey Assignment System, which assignes Surveys to the employees.
 At present only 4 employees and 6 surveys are present, database will be added later with the functionality of adding employees as well as surveys.
 
 The app is built using Express.js for building the middleware, data is stored locally, React.js is used for the frontend along with Bulma for styling.
