@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { store } from '../../index'
+import { GET_SURVEYS } from '../../actionTypes'
 import './employees.css';
 
 class Employees extends Component {
@@ -18,7 +19,7 @@ class Employees extends Component {
     .then(res => res.json())
     .then(employees => {
       store.dispatch({
-        type: "GET_SURVEYS",
+        type: GET_SURVEYS,
         payload: employees
       });
     })
@@ -38,7 +39,7 @@ class Employees extends Component {
       .then(response => response.json())
       .then(employees => {
         store.dispatch({
-          type: "GET_SURVEYS",
+          type: GET_SURVEYS,
           payload: employees
         });
       })

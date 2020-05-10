@@ -2,11 +2,11 @@ const initialState = {
     employees: null
 }
 
-export const reducer = (state = initialState, action) => {
-    switch(action.type) {
+export const reducer = (state = initialState, { type, payload }) => {
+    switch(type) {
         case 'GET_SURVEYS':
             return {
-                employees: action.payload
+                employees: payload
             }
         default:
             return state;
